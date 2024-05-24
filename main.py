@@ -224,8 +224,9 @@ if __name__ == "__main__":
 
     print(f"\n\nРозширена матриця, яку треба розв'язати методом Зейделя:")
     print_matrix(zeidel)
+    zeidel_result=zeidel_method(zeidel_matrix, zeidel_vector, error)
     print("\nРезультати розв'язання:")
-    print(zeidel_method(zeidel_matrix, zeidel_vector, error))
+    print(zeidel_result)
 
     # def getMaxElementInColumn(matrix: list, col_ind: int) -> int:
     #     col = []
