@@ -47,9 +47,6 @@ def gauss_jordan(matrix: list, vector: list) -> list:
 
     ext_matrix = join_matrix_and_vector(matrix, vector)
 
-    def global_zero_check(matrix: list):
-        zeroes = []
-
     def check_for_zero(matrix: list, col_ind: int) -> matrix:
         non_zero_row_ind = None
         if (matrix[col_ind][col_ind] == 0):
